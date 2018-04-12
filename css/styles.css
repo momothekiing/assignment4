@@ -26,6 +26,7 @@ body {
 
 h1,
 h2 {
+    color: yellow;
     font-weight: 400;
 }
 
@@ -82,11 +83,41 @@ main {
     align-items: center;
     text-align: center
 }
+form p {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+form label {
+    flex-basis: 33%;
+}
+
+form input, textarea {
+    flex: 1;
+    margin: 0 1em;
+    border-radius: 5px;
+}
+
+form-button {
+    margin-right: 1em;
+} 
 
 .hero-text {
- 
-    
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    flex: 5;
 }
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.hero-text ul {
+    list-style-type: none;
+}
+
 
 .topleft {
     background-color: rgba(250, 12, 12, 0.67);
@@ -197,14 +228,13 @@ li a:hover:not(.active) {
 .grid-box img {
     width: 100%;}
 
-
 .active {
     /*    background-color: #fa0707;*/
     /*    backface-visibility: visible;*/
 }
 
 footer {
-    background-color: #555;
+    background-color: rgba(122, 28, 232, 0.58);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,7 +254,10 @@ footer nav li {
     header,
     main,
     nav ul,
-    footer {
+    footer,
+    form p {
         flex-direction: column;
     }
-}
+    form input, textarea {
+        margin:2px 0
+    }
