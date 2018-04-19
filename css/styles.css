@@ -75,6 +75,46 @@ header nav li {
     padding: 1em;
 }
 
+
+main form {
+    border-radius: 5px;
+    background-color: rgba(172, 126, 245, 0.33);
+    padding: 129px;
+}
+form p {
+    display: flex;
+
+}
+form label {
+    flex-basis: 33%;
+    margin-top: 2em;
+}
+
+form input,
+textarea {
+    flex: 1;
+    margin: 0 1em;
+       width: 100%;
+    padding: 22px;
+    border: 4px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+form input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type=submit]:hover {
+    background-color: #45a049;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -83,33 +123,27 @@ main {
     align-items: center;
     text-align: center
 }
-form p {
-    display: flex;
-    margin-bottom: 1em;
+main .hero-text {
+    background-color: rgba(138, 43, 226, 0.63);
+    padding: 205px;
+
 }
 
-form label {
-    flex-basis: 33%;
-}
 
-form input, textarea {
-    flex: 1;
-    margin: 0 1em;
-    border-radius: 5px;
-}
 
-form-button {
-    margin-right: 1em;
-} 
+
+
 
 .hero-text {
     padding: 3em;
     display: flex;
     flex-direction: column;
     flex: 5;
+
 }
 
 .hero-text h1 {
+
     font-size: 3em;
     margin-bottom: 1em;
 }
@@ -174,22 +208,26 @@ p {
     text-align: center;
     align-content: center;
     justify-content: center;
- 
+    
+
 }
 
 img {
     padding: 0 10px 0 0;
 }
-main div{
+
+main div {
     justify-content: center;
-    
-   
-    
+
+
+
+
 }
+
 .p-quote {
     color: #fdf408;
     text-align: center;
- flex: 1;  
+    flex: 1;
 }
 
 ul {
@@ -226,7 +264,8 @@ li a:hover:not(.active) {
 }
 
 .grid-box img {
-    width: 100%;}
+    width: 100%;
+}
 
 .active {
     /*    background-color: #fa0707;*/
@@ -258,6 +297,7 @@ footer nav li {
     form p {
         flex-direction: column;
     }
-    form input, textarea {
-        margin:2px 0
+    form input,
+    textarea {
+        margin: 2px 0
     }
