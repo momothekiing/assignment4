@@ -43,8 +43,12 @@ a {
     transition: background-color .3s, color .3s;
     text-decoration: none;
     text-transform: uppercase;
+    
 }
 
+    
+    
+}
 a:hover {
     color: rgb(246, 203, 64);
 }
@@ -92,6 +96,13 @@ form label {
     margin-top: 2em;
     display: flex;
     flex: 1;
+}
+form select{
+      padding: 12px 20px;
+        width: 100%;
+        margin: 0; 
+ 
+  
 }
 
 form input,
@@ -267,6 +278,7 @@ li a:hover:not(.active) {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     grid-row-gap: 10px;
     flex: 1;
+    
 }
 
 .grid-box img {
@@ -306,4 +318,9 @@ footer nav li {
     form input,
     textarea {
         margin: 2px 0
+    }
+    form select{
+        margin: 0;
+       
+        
     }
